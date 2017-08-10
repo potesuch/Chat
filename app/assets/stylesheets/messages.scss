@@ -1,7 +1,10 @@
-.messages .log ol {
+.messages .log  {
   height: 300px;
-  list-style-type: none;
   overflow-y: auto;
+}
+
+.messages .log ol  {
+  list-style-type: none;
 }
 
 .insert_desc #qw1 {
@@ -13,5 +16,5 @@
 }
 
 .insert_desc input[value="Send"] {
-  
+
 }

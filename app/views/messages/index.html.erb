@@ -3,10 +3,10 @@
 </div>
 
 <div class="messages">
-  <div class="log">
-    <ol>
+  <div id="m_log" class="log">
+    <ol class="list-group">
       <% @messages.each do |message| %>
-        <li>
+        <li class="litem">
           <p>
             <strong><%= message.name %></strong>
           </p>
