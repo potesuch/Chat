@@ -1,0 +1,46 @@
+<div class="header">
+
+</div>
+
+<div class="messages">
+  <div class="log">
+    <ol>
+      <% @messages.each do |message| %>
+        <li>
+          <p>
+            <strong><%= message.name %></strong>
+          </p>
+          <p>
+            <%= message.text %>
+          </p>
+          <p align="right">
+            <%= message.created_at %>
+          <p>
+     <% end %>
+    </ol>
+  </div>
+</div>
+
+<div class="insert_desc">
+  <%= form_for :message_input, url: {action: "new"} do |f| %>
+    <p id="qw1">
+      <%= f.label "Name:" %>
+    </p>
+    <p id="qw1">
+      <%= f.text_field :name %>
+    </p>
+    <p id="qw1">
+      <%= f.label "Message:" %>
+    </p>
+    <p>
+      <%= f.text_area :text %>
+    </p>
+    <p>
+      <%= f.submit "Send" %>
+    </p>
+  <% end %>
+</div>
+
+<div class="footer">
+  <p>Created by Max Viso</p>
+</div>
