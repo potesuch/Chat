@@ -44,3 +44,20 @@
 <div class="footer">
   <p>Created by Max Viso</p>
 </div>
+
+<button type="button" id="btn_click" /> click me!</button>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+  document.getElementById('m_log').scrollTop = 0;
+  var i = document.getElementById('m_log').scrollTop;
+  var s = document.getElementById('m_log').scrollHeight-document.getElementById('m_log').offsetHeight;
+  while(i<=s){
+    i++;
+    document.getElementById('m_log').scrollTop = i;
+  }
+
+
+
+</script>
